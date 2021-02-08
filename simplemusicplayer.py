@@ -69,7 +69,7 @@ def createwidgets():
      font=("CHILLER",20,'italic'),bd = 5,command = stopmusic,state = DISABLED)
     root.stop_button.grid(row =3, column =0,pady=(0,0),padx = (130,0))
 
-    Volume_scale = Scale(root,from_ = 0, to = 100, orient = VERTICAL,background = "Black",foreground = "Red",bd=10,font=("CHILLER",20),length = 300,sliderlength = 30,label = "VOLUME",command = setvolume )
+    Volume_scale = Scale(root,from_ = 100, to = 0, orient = VERTICAL,background = "Black",foreground = "Red",bd=10,font=("CHILLER",20),length = 300,sliderlength = 30,label = "VOLUME",command = setvolume )
     Volume_scale.set(100)
     Volume_scale.grid(row =1,column= 2,pady=(30,0),rowspan=5)
 
